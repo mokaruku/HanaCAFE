@@ -1,0 +1,154 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+//最低限のリセット
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-size: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(218, 225, 209);
+  padding: 0;
+  width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//テキストサイズの自動調整
+
+.sp-only {
+  display: none;
+}
+
+@include mq {
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+}
+
+/* Header--------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .c-header__sp {
+    align-items: center;
+    height: auto;
+    /* 高さは自動で */
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    transition: 0.25s ease-out;
+  }
+}
+
+.c-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-header__sp .c-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-nav li {
+  margin-right: 20px;
+}
+
+
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: 400ms;
+}
+
+.l-container {
+  max-width: 1800px;
+  padding-right: 31px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.c-header.fadeInDown {
+  animation-name: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .c-header.fadeInDown {
+    animation-name: fadeInDown;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-header {
+    padding: 0;
+    background-color: #ffffff; //768以下背面白に
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-header .l-container {
+    height: 70px;
+    padding: 0 0 0 22px;
+  }
+}
