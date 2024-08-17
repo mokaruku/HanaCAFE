@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,290 +12,246 @@
     <!--<link data-react-helmet="true" rel="canonical" href="ここに自分のHPのURLいれる"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">      
+        <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/css/6-1-8.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="script.js"></script>
+    </head>
 </head>
-
 <body>
-
     <div class="l-wrapper">
         <!-- c-header -->
-
         <header class="c-header animated fadeInDown">
             <div class="l-container">
                 <h1 class="c-header__logo animated fadeInDown">HanaCAFE nappa69</h1>
                 <div class="c-header__box">
-                    <div class="js-goto">
-                        <a href="https://reserve.retty.me/restaurant/100000067832/v2/reserve/step1"
-                            class="btn--fixed ver2 animated fadeInDown">予約する</a>
-
-                    </div>
-                    <div class="c-toggle js-show-menu sp-only">
-                        <span></span>
-                        <span></span>
-                        <div class="c-toggle__txt">MENU</div>
-                    </div>
-                    <div class="c-toggle js-close-menu sp-only">
-                        <span></span>
-                        <span></span>
-                        <div class="c-toggle__txt">CLOSE</div>
+                    <a href="https://reserve.retty.me/restaurant/100000067832/v2/reserve/step1"
+                        class="btn--fixed ver2 animated fadeInDown">予約する</a>
+                    <div class="openbtn"><span></span><span></span><span></span></div>
+                    <div class="c-header__sp animated fadeInDown" style="height: 100%;">
+                        <nav class="c-nav">
+                            <ul id="menu-header-menu" class="c-nav__menu">
+                                <li><a href="#">NEWS</a></li>
+                                <li><a href="#">CONCEPT</a></li>
+                                <li><a href="#">MENU</a></li>
+                                <li><a href="#">STORES</a></li>
+                                <li><a href="#">ACCESS</a></li>
+                                <li><a href="#">RESERVATION</a></li>
+                            </ul>
+                            <ul class="c-sns">
+                                <li>
+                                    <a href="https://www.facebook.com/AndPremium2013/" target="_blank">
+                                        <img src="img/ico-facebook-fill.svg" alt="fb"></a>
+                                </li>
+                                <li><a href="https://twitter.com/and_premium" target="_blank"><img
+                                            src="img/ico-twitter-fill.svg" alt="tw"></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/and_premium/" target="_blank"><img
+                                            src="img/ico-instagram-line.svg" alt="ins"></a></li>
+                                <li><a href="https://line.me/R/ti/p/@079miyaw?oat_source=yahoo_mapsearch&oat_medium=facility_details"
+                                        target="_blank"><img src="img/line-fill.svg" alt="li"></a>
+                                    </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-
-                <div class="c-header__sp animated fadeInDown is-show">
-                    <nav class="c-nav">
-                        <ul>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">CONCEPT</a></li>
-                            <li><a href="#">MENU</a></li>
-                            <li><a href="#">STORES</a></li>
-                            <li><a href="#">ACCESS</a></li>
-                            <li><a href="#">RESERVATION</a></li>
-                        </ul>
-
-                        <ul class="header__sns">
-                            <li>
-                                <a href="https://www.facebook.com/AndPremium2013/" target="_blank">
-                                    <img src="img/ico-facebook-fill.svg" alt="fb">
-                                </a>
-                            </li>
-                            <li><a href="https://twitter.com/and_premium" target="_blank"><img
-                                        src="img/ico-twitter-fill.svg" alt="tw"></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/and_premium/" target="_blank"><img
-                                        src="img/ico-instagram-line.svg" alt="ins"></a></li>
-                            <li><a href="https://line.me/R/ti/p/@079miyaw?oat_source=yahoo_mapsearch&oat_medium=facility_details"
-                                    target="_blank"><img src="img/line-fill.svg" alt="li"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
         </header>
-        <!-- c-header -->
-        <!-- main -->
+        <!-- c-header --> <!-- main -->
         <main class="p-top">
             <!-- c-main-visual -->
-
-            <img src="img/b0156184_08262566.jpg" alt="" width="100%" height="auto">
+            <div class="image-wrapper">
+                <img src="img/nappalogo.main.svg" alt="Nappa Logo" class="logo-image">
+                <img src="img/ksxvrqkuxnc-carissa-gan.jpg"" alt="" class="background-image">
+                <div class="overlay"></div>
+            </div>
             <!-- /c-main-visual -->
             <!-- c-news -->
             <section class="c-news">
-                <div id="news"></div>
-                <div class="l-container">
-                    <div class="c-news__flex">
-                        <h2 class="c-title01 js-fade fade" style="opacity: 1;">NEWS</h2>
-                        <ul class="c-news__list js-fade fade" style="opacity: 1;">
-                            <li>
-                                <a href="https://hanacafenappa69.shopinfo.jp/pages/5452799/static"><span
-                                        class="date">2024.08.01</span>古民家カフェを貸し切って楽しパーティーしませんか？<br>コース・貸切・パーティープラン
-                                    <span class="f">
-                                        <img class="img-change"
-                                            src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                            alt="arrow">
-                                    </span>
-
-                                </a>
-                            </li>
-                            <img src="img/party.img.jpg" alt="">
-                            <li>
-                                <a href="https://hanacafenappa69.shopinfo.jp/posts/54532780">
-                                    <span class="date">2024.07.01</span>
-                                    "平日(月〜金)の11:00〜19:00<br>2024SUMMER ハッピーアワー‼︎ <span class="f">
-                                        <img class="img-change"
-                                            src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                            alt="arrow">
-                                    </span>
-
-                                </a>
-                            </li>
-                            <img src="img/Beer4syuruijpg.jpg" alt="">
-                            <li>
-                                <a href="https://wolt.com/ja/jpn/kawasaki/restaurant/kosugi-cafe-nappa69"><span
-                                        class="date">2024.04.08</span>自宅にいながらnappaを楽しめる<br>テイクアウト、デリバリーやってます。
-                                    <span class="f">
-                                        <img class="img-change"
-                                            src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                            alt="arrow">
-                                    </span>
-                                </a>
-                            </li>
-                            <img src="img/takeouto.jpg" alt="">
-                        </ul>
-                    </div>
-                </div>
+                <h2 class="news__heading">NEWS</h2>
+                <ul class="news__list">
+                    <li class="news__item" style="background-color: #FFF7E6;">
+                        <a href="#" class="news__link">
+                            <div class="news__cover-wrapper">
+                                <img src="img/party.img.jpg" alt="party" class="news__cover" width="700" height="700">
+                            </div>
+                            <div class="news__content">
+                                <p class="news__date">2024.08.01</p>
+                                <p class="news__topic">コース・貸切・パーティープラン</p>
+                                <p class="news__title">古民家カフェを貸し切って楽しパーティーしませんか？</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news__item" style="background-color: #FFF7E6;">
+                        <a href="#" class="news__link">
+                            <div class="news__cover-wrapper">
+                                <img src="img/Beer4syuruijpg.jpg" alt="beer" class="news__cover" width="700"
+                                    height="700">
+                            </div>
+                            <div class="news__content">
+                                <p class="news__date">2024.07.01</p>
+                                <p class="news__topic">2024SUMMER ハッピーアワー‼︎</p>
+                                <p class="news__title">平日(月〜金)の11:00〜19:00</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news__item" style="background-color: #FFF7E6;">
+                        <a href="#" class="news__link">
+                            <div class="news__cover-wrapper">
+                                <img src="img/takeouto.jpg" alt="takeout" class="news__cover" width="700" height="700">
+                            </div>
+                            <div class="news__content">
+                                <p class="news__date">2024.04.08</p>
+                                <p class="news__topic">テイクアウト、デリバリーやってます。</p>
+                                <p class="news__title">お電話でご注文頂きますとお待たせせずにお渡し出来ます。<br>
+                                    全て手作りのnappaのごはんをご自宅でお召し上がりください</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </section>
             <!-- /c-news -->
-
             <section class="c-concept">
-                <div id="concept"></div>
+                <div id="concept">&ensp;</div>
                 <div class="c-concept__box">
-                    <div class="c-concept__list animated1 js-fadeInLeft">
-                        <h2 class="c-title01 js-fade fade" style="opacity: 1;">concept</h2>
+                    <div class="c-concept__list animated1">
+                        <h2 class="c-title01 js-fade">concept</h2>
                         <div class="c-concept__text">花と植物、美味しい珈琲とカフェごはん大好きなものたちを詰め込んだ<br>小さなカフェ、、、はじめました。</div>
-                        <p class="js-fade fade" style="opacity: 1;">
-                            手塗りの生成色の壁に木のぬくもりを感じる椅子と<br>テーブル、お気に入りのソファーを一席どうぞ。<br>
-                            ひとりの時間を大切にしたいお客様の為に<br>
-                            カウンター席を多数ご用意しました。<br class="sp-only">棚には不思議なかたちの多肉植物やサボテン達、<br>
-                            店先では季節の花鉢が静かにお出迎えしています。<br>
-
-                        </p>
-                    </div>
-                    <div class="c-concept__img animate-cover js-fade animate-add fade" style="opacity: 1;">
-                        <img class="img-change" src="img/20180522-DSCF0199.jpg" alt="img-concept">
-                    </div>
-
-                    <div class="c-concept__img animate-cover js-fade animate-add fade" style="opacity: 1;">
-                        <img class="img-change" src="img/shop3.jpg" alt="img-concept">
-                    </div>
-                    <p class="js-fade fade" style="opacity: 1;">
-                        全てのメニューを一つ一つ心を込めて手作りで,<br>玄米や有機野菜、旬の食材を中心にした毎日でも<br>
-                        食べたくなる「体に優しい心が嬉しいお料理」です。<br>
-
-                        毎朝焼くパン、そしてクッキーやケーキは国産小麦<br class="sp-only">で作ります。<br>
-                        自家製のジンジャーエールや果実酒などもございます。<br>
-                    </p>
-
-                    <div class="c-concept__text">大好きなものたちを詰め込んだ隠れ家カフェ、<br>ゆっくりとした時間が流れる、そんなカフェ空間です。
+                        <div class="c-concept__01">
+                            <p class="js-fade">
+                                手塗りの生成色の壁に木のぬくもりを感じる椅子と<br>テーブル、お気に入りのソファーを一席どうぞ。<br>
+                                ひとりの時間を大切にしたいお客様の為に<br>
+                                カウンター席を多数ご用意しました。<br class="sp-only">棚には不思議なかたちの多肉植物やサボテン達、<br>
+                                店先では季節の花鉢が静かにお出迎えしています。</p>
+                            <img class="img-change" src="img/20180522-DSCF0199.jpg" alt="img-concept">
+                        </div>
+                        <div class="c-concept__02">
+                            <img class="img-change" src="img/shop3.jpg" alt="img-concept">
+                            <p class="js-fade fade">
+                                全てのメニューを一つ一つ心を込めて手作りで,<br>玄米や有機野菜、旬の食材を中心にした毎日でも<br>
+                                食べたくなる「体に優しい心が嬉しいお料理」です。<br>
+                                毎朝焼くパン、そしてクッキーやケーキは国産小麦<br class="sp-only">で作ります。<br>
+                                自家製のジンジャーエールや果実酒などもございます。<br>
+                            </p>
+                        </div>
+                        <div class="c-concept__text">大好きなものたちを詰め込んだ隠れ家カフェ、<br>ゆっくりとした時間が流れる、そんなカフェ空間です。
+                        </div>
                     </div>
                 </div>
             </section>
-
             <!-- c-list-images -->
-
             <section class="c-menu">
-                <div id="MENU"></div>
-                <div class="c-list-images slideFrame animate-cover" id="loop_js" style="width: 539px;">
-                    <h2 class="c-title01 js-fade fade" style="opacity: 1;">MENU</h2>
-                    <div class="slideGuide left" style="width: 2064.11px;">
-                        <div class="slideGuide left" style="width: 2078.63px;">
+                <div class="menu-wrapper">
+                    <div class= "container">
+                    <h2 class="menu-title">MENU</h2>
+                    <div class="menus">
+                      <div class="menu">
+                        <img src="img/napapureto.webp" alt="Lunch">
+                        <h2>Lunch</h2>
+                        <p>nappaごはんプレート<br>1,200円</p>
+                      </div>
+                      <div class="offer">
+                        <img src="img/nappa.hamu.jpg" alt="Appetizer">
+                        <h2>Appetizer</h2>
+                        <p>生ハム＆サラミ<br>1,100円</p>
+                      </div>
+                      <div class="offer">
+                        <img src="img/nappabudo.jpg"width="700" height="700"alt="Desert">
+                        <h2>Desert</h2>
+                        <p>ぶどうパフェ<br>880円</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
 
-
-                            <div class="c-list-images__img slideCell" style="margin-left: -88.2632px;"><img
-                                    src="img/ksxvrqkuxnc-carissa-gan.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/77dc7d41d3eb35afe21c2f311017c599_s.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/yjimage05.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/015dc3cd3af9ae665aa252101640f555_s.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/55061277.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/yjimage02.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/restaurant-1762236_960_720.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/pasta-712664_960_720.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/o0480036013129526328.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/yjimage01.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img
-                                    src="img/o0480048013058051149.jpg" alt="photo"></div>
-                            <div class="c-list-images__img slideCell" style="margin-left: 0px;"><img src="img/talto.png"
-                                    alt="photo"></div>
-                        </div>
-
-                        <div>
+                 <ul class="slider">
+                    <li><img src="img/ksxvrqkuxnc-carissa-gan.jpg" alt="" ></li>
+                    <li><img src="img/77dc7d41d3eb35afe21c2f311017c599_s.jpg" alt=""></li>
+                    <li><img src="img/yjimage05.jpg" alt=""></li>
+                    <li><img src="img/015dc3cd3af9ae665aa252101640f555_s.jpg" alt=""></li>
+                    <li><img src="img/yjimage02.jpg" alt="photo" alt=""></li>
+                    <li><img src="img/restaurant-1762236_960_720.jpg" alt=""></li>
+                    <li><img src="img/pasta-712664_960_720.jpg" alt=""></li>
+                    <li><img src="img/o0480036013129526328.jpg" alt=""></li>
+                    <li><img src="img/yjimage01.jpg" alt=""></li>
+                    <li><img src="img/o0480048013058051149.jpg" alt=""></li>
+                    <li><img src="img/talto.png" alt=""></li>
+                     <!--/slider--></ul> 
+                          
+                        <div class="menu__arrow">
                             <a href="https://wolt.com/ja/jpn/kawasaki/restaurant/kosugi-cafe-nappa69"><span
                                     class=""></span>そのほかのメニューはこちら
                                 <span class="f">
-                                    <img class="img-change"
-                                        src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                        alt="arrow">
+                                    <img class="img-change"src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"alt="arrow">
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <div class="c-center__img animate-cover js-fade animate-add fade" style="opacity: 1;">
+                    <div class="c-center__img " style="opacity: 1;">
                         <img class="img-change" src="img/shop9.jpg" alt="img-c-center">
                     </div>
-
             </section>
             <!-- /c-list-images -->
             <!-- c-stores -->
-
             <section class="c-stores">
-                <div id="stores"></div>
-                <div class="l-container">
-                    <div class="c-stores__top">
-                        <h2 class="c-title01 js-fade fade" style="opacity: 1;">STORES / ON LINE STORES</h2>
-                        <a href="https://torse.stores.jp/" target="_blank" class="c-stores__link pc-only">ストアへ移動
-                            <span class="f">
-                                <img class="img-change"
-                                    src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                    alt="arrow">
-                            </span>
-                            <span class="b">
-                                <img class="img-change"
-                                    src="https://torse.jp/wp-content/themes/torse_theme/assets/img/icons/arrow-sp.png"
-                                    alt="arrow">
-                            </span>
-                        </a>
+                <div class="stores-wrapper">
+                  <div class="s-container">
+                    <h2 class="store-title">STORES / ON LINE STORES</h2>
+                    <div class="ol-stores">
+                      <div class="ol-store">
+                        <div class="ol-store-img">
+                          <a href="store1.html">
+                            <img src="img/nappacoffee2.jpg" alt="MCR">
+                          </a>
+                        </div>
+                        <p class="store-text">全て自家焙煎のスペシャルティーコーヒーを使用してブレンドしています。
+                          店内、テイクアウト、オンラインにて全てのブレンドがお楽しみ頂けます。</p>
+                      </div>
+                      <div class="ol-store">
+                        <div class="ol-store-img">
+                          <a href="https://hanacafenappa69.shopinfo.jp/posts/20195601">
+                            <img src="img/nappadorink.jpg" alt="クラフト">
+                          </a>
+                        </div>
+                        <p class="store-text">数量限定！！<br>100年以上前のオリジナルコーラレシピに基づき、本物のコーラの実を使って作られたクラフトコーラです。</p>
+                      </div>
+                      <div class="ol-store">
+                        <div class="ol-store-img">
+                          <a href="https://file.notion.so/f/f/ce8c9a09-0f4c-44b3-a64c-1b46c700a5c1/35dfadcf-5f7b-4fe1-8e4f-a5c1a9f73095/Untitled.png?table=block&id=b4be7138-da79-4398-be1e-7f7b133e54b1&spaceId=ce8c9a09-0f4c-44b3-a64c-1b46c700a5c1&expirationTimestamp=1722852000000&signature=aqt03wzuO1fNkpQDfnhB-pHxKRZw76BnWwZNkGsWo04&downloadName=Untitled.png">
+                            <img src="img/nappacookie.jpg" alt="ナパクッキー">
+                          </a>
+                        </div>
+                        <p class="store-text">人気のクッキー、スコーン、旬の果物を使った季節のスイーツは、全て国産小麦を使用し手作りしてます。人気のまるパンは毎朝焼いてます。</p>
+                      </div>
                     </div>
-                    <div class="c-stores__list js-fade fade" style="opacity: 1;">
-
-                        <a href="https://mcr.storeinfo.jp/" target="_blank" class="item" tabindex="0"
-                            style><!-- style="display: none;">の中身　display: none;-->
-                            <div class="store-item">
-                                <img src="img/nappacoffee2.jpg" alt="photo"
-                                    style><!-- style="display: none;">の中身　display: none;-->
-                            </div>
-
-                            <div class="c-stores__list__txt">全て自家焙煎のスペシャルティーコーヒーを使用してブレンドしています。
-                                店内、テイクアウト、オンラインにて全てのブレンドがお楽しみ頂けます。
-                            </div>
-                        </a>
-
-                        <a href="https://hanacafenappa69.shopinfo.jp/posts/20195601" target="_blank" class="item"
-                            tabindex="-1" style>
-                            <div class="store-item">
-                                <img src="img/nappadorink.jpg" alt="photo"
-                                    style><!-- style="display: none;">の中身　display: none;-->
-                            </div>
-
-                            <div class="c-stores__list__txt">
-                                数量限定！！<br>100年以上前のオリジナルコーラレシピに基づき、本物のコーラの実を使って作られたクラフトコーラです。
-                            </div>
-                        </a>
-
-                        <a href="https://file.notion.so/f/f/ce8c9a09-0f4c-44b3-a64c-1b46c700a5c1/35dfadcf-5f7b-4fe1-8e4f-a5c1a9f73095/Untitled.png?table=block&id=b4be7138-da79-4398-be1e-7f7b133e54b1&spaceId=ce8c9a09-0f4c-44b3-a64c-1b46c700a5c1&expirationTimestamp=1722852000000&signature=aqt03wzuO1fNkpQDfnhB-pHxKRZw76BnWwZNkGsWo04&downloadName=Untitled.png"
-                            target="_blank" class="item" tabindex="-1" style>
-                            <div class="store-item">
-                                <img src="img/nappacookie.jpg" alt="photo"
-                                    style><!-- style="display: none;">の中身　display: none;-->
-                            </div>
-
-                            <div class="c-stores__list__txt">
-                                人気のクッキー、スコーン、旬の果物を使った季節のスイーツは、全て国産小麦を使用し手作りしてます。人気のまるパンは毎朝焼いてます。
-                            </div>
-                        </a>
-                    </div>
-
+                  </div>
+                 </section>
+           <!-- /c-stores -->
+           <section class="c-access">
+            <div id="access"></div>
+            <div class="l-container">
+              <h2 class="c-title01">ACCESS</h2>
+          
+              <div class="c-access__top js-fade fade" style="opacity: 1;">
+                <div class="c-access__map">
+                  <img src="img/hana.map.jpg" alt="map">
                 </div>
-            </section>
-            <!-- /c-stores -->
-            <!-- /c-stores -->
-            <section class="c-access">
-                <div id="access"></div>
-                <div class="l-container">
-                    <h2 class="c-title01 js-fade fade" style="opacity: 1;">ACCESS</h2>
-
-                    <div class="c-access__top js-fade fade" style="opacity: 1;">
-                        <div class="c-access__map"><img src="img/Untitled (1).png" alt="map"></div>
-                    </div>
-                    <div class="c-access__map1"><img src="img/hanamap1.jpeg" alt="map">立て看板が目印★♪</div>
-
-                    <div class="c-access__map2"><img src="img/hanamap2.jpeg" alt="map">伏見稲荷神社の北側の小さな
-                        小道をお入りください。
-                    </div>
-                    <h2 class="c-title02 js-fade fade" style="opacity: 1;">Hana CAFE nappa69</h2>
-                    <div class="c-access__details">
-                        <div class="c-access__details__list mt">
+                <div class="c-access__other">
+                  <div class="c-access__map1">
+                    <img src="img/hanamap1.jpeg" alt="map">
+                    <p>伏見稲荷神社の北側の小さな<br>小道をお入りください。</p>
+                  </div>
+                  <div class="c-access__map2">
+                    <img src="img/hanamap2.jpeg" alt="map">
+                    <p>立て看板が目印★♪</p>
+                  </div>
+                </div>
+              </div>
+          
+              <h2 class="c-title02 js-fade fade" style="opacity: 1;">Hana CAFE nappa69</h2>
+              <div class="c-access__details">
                             <div class="ttl">住所</div>
                             <div class="txt"> 神奈川川崎市中原区新丸子東1-983-1 <a
                                     href="https://maps.google.com/maps?ll=35.579318,139.662119&z=15&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92211-0004%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%8E%9F%E5%8C%BA%E6%96%B0%E4%B8%B8%E5%AD%90%E6%9D%B1%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%99%EF%BC%98%EF%BC%93%E2%88%92%EF%BC%91"
@@ -373,13 +328,23 @@
                             target="_blank"><img src="img/line-fill.svg" alt="li"></a></li>
                 </ul>
             </footer>
-
-
         </main>
     </div>
-
     </div>
+  
+    </head>
+   
+    <!--1.jQuery-->
+    <script src="js/jquery-3.7.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/js/6-1-8.js"></script>
+     <!--2.プラグイン-->
+  
+    <script src="js/5-2-4.js"></script>
     <script src="js/script.js"></script>
+   <!--自作のJS-->
+
 </body>
 
 </html>
