@@ -46,11 +46,7 @@ img {
   height: auto;
 }
 
-.sp-only {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .pc-only {
     display: none;
   }
@@ -64,28 +60,19 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   z-index: 3;
   transition: 400ms;
 }
 
-.c-header.fadeInDown {
-  animation-name: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .c-header.fadeInDown {
-    animation-name: fadeInDown;
-  }
-}
 @media only screen and (max-width: 768px) {
   .c-header {
-    padding: 0;
+    padding: 10px;
     background-color: #ffffff;
   }
 }
 .c-header .l-container {
-  padding-right: 80px;
+  padding-right: 40px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -94,7 +81,7 @@ img {
 }
 
 .c-header__logo {
-  font-size: 48px;
+  font-size: 30px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -137,12 +124,21 @@ img {
   .c-header__sp {
     opacity: 1;
     pointer-events: all;
-    overflow: scroll;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  .c-header__sp .pc-only {
+    display: none;
+  }
+  .c-header__sp .sp-only {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
   .c-nav {
     font-family: var(--font-base);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 100px;
   }
   .c-header .c-nav {
@@ -253,6 +249,7 @@ img {
     left: 4px;
   }
 }
+/*=========ハンバーガーメニューここまで ===============*/
 .c-header__sp .c-nav ul {
   display: flex;
   list-style-type: none;
@@ -274,25 +271,20 @@ img {
     animation-duration: inherit !important;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 374px) {
-  .btn--fixed {
-    width: 80px;
-  }
-}
 .btn--fixed.ver2 {
   background-color: #ffffff;
   color: #ceccb5;
   box-sizing: border-box;
-  border: 3px solid #ceccb5;
+  border: 2px solid #ceccb5;
   font-weight: bold;
-  width: 85px;
+  width: 65px;
   text-decoration: none;
-  height: 250px;
+  height: 200px;
   position: fixed;
   z-index: 2;
   right: 0;
   bottom: 40px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   display: flex;
@@ -300,19 +292,31 @@ img {
   align-items: center;
 }
 .btn--fixed.ver2:hover {
-  background-color: #b28850;
+  background-color: #ceb89c;
   color: #ffffff;
   line-height: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .btn--fixed ver2 {
+    width: 60px;
+  }
+}
 @media only screen and (min-width: 768px) {
   a {
     transition: all 1s;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 }
+c-main-visual body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .image-wrapper {
   position: relative;
   width: 100%;
@@ -332,7 +336,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 40%;
+  max-width: 45%;
   height: auto;
   z-index: 1;
 }
@@ -346,6 +350,11 @@ img {
   background-color: rgba(129, 121, 96, 0.38);
 }
 
+@media (max-width: 767px) {
+  .logo-image {
+    max-width: 60%;
+  }
+}
 .news__heading {
   text-align: center;
   font-size: 48px;
@@ -524,6 +533,7 @@ img {
     line-height: 1.4;
   }
 }
+/*========= NEWここまで ===============*/
 .c-concept {
   background-color: #fefdea;
   position: relative;
@@ -718,6 +728,7 @@ c-concept #concept {
   /*スライド左右の余白調整*/
 }
 
+/*=========MENUここまで ===============*/
 .menu__arrow {
   display: flex;
   justify-content: flex-end;
@@ -821,7 +832,12 @@ img-change {
     flex-basis: 100%;
   }
 }
-/*========= OLstoreここまで ===============*/
+/*=========storesここまで ===============*/
+.c-access {
+  background-color: #FEFDEA;
+  height: 1300px;
+}
+
 .c-title01 {
   font-size: 36px;
   font-weight: bold;
@@ -888,6 +904,7 @@ img-change {
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .c-access__map1 p,
@@ -907,4 +924,157 @@ img-change {
 .c-access__map2 p {
   transform: rotate(-45deg);
   order: 1;
+}
+
+/*========= ACCESSここまで ===============*/
+.c-access2 {
+  background-color: #E5F5B8;
+  height: 500px;
+}
+
+.c-title02 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.c-access__details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 40px;
+}
+
+.c-access__details--address {
+  float: left;
+}
+
+.c-access__details--hours {
+  float: right;
+}
+
+.c-access__details .ttl {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.c-access__details .txt {
+  line-height: 2;
+}
+
+.c-access__details__box {
+  margin-top: 20px;
+}
+
+.c-access__details__list .txt {
+  line-height: 1.5;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 767px) {
+  .c-access__details {
+    width: 100%;
+    float: none;
+  }
+  .c-access__details--address,
+  .c-access__details--hours {
+    float: none;
+  }
+}
+/*========= Hana CAFE住所・営業時間ここまで ===============*/
+.title {
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+.content {
+  margin-top: -60px;
+  margin-left: 180px;
+}
+
+.txt2 {
+  line-height: 2;
+  text-align: left;
+  margin-left: 500px;
+}
+
+.color-red {
+  color: red;
+  font-weight: bold;
+  margin-left: 400px;
+  padding: 0;
+}
+
+.form-submit {
+  flex-basis: 30%;
+  text-align: right;
+  /* 右寄せ */
+  margin-top: -75px;
+  /* 上に移動 */
+  margin-right: 250px;
+  /* 右に移動 */
+}
+
+.btn-rectangle {
+  display: inline-block;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #D9D9D9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rectangle:hover {
+  background-color: #404c58;
+}
+
+/*========= reservationここまで ===============*/
+.form-img-area {
+  margin-top: 150px;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.form-img-area img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/*=========フッター写真ここまで ===============*/
+footer {
+  padding: 20px 0;
+}
+
+.footer__copyright {
+  width: 100%;
+  display: block;
+  letter-spacing: 1px;
+  clear: both;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footer__sns {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 80px;
+  margin: -25px;
+}
+
+.footer__sns li {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.min.css.map */
