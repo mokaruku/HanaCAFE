@@ -441,6 +441,13 @@ img {
   font-weight: bold;
 }
 
+.news__topic3 {
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 20px;
+  display: inline;
+}
+
 .news__title {
   font-family: var(--font-base);
   font-size: 20px;
@@ -501,7 +508,7 @@ img {
   transform: scaleX(1);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .news__item {
     padding: 0;
     overflow: hidden;
@@ -534,17 +541,28 @@ img {
     line-height: 1.4;
   }
 }
-/* モバイル時のスタイル */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .news__content,
   .news__content2,
   .news__content3 {
     text-align: left;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .news__content3 {
     margin-left: 80px;
+  }
+  .news__date3 {
+    padding-left: 100px;
+  }
+  .news__topic3 {
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 100px;
+    display: inline;
+  }
+  .news__title3 {
+    padding-left: 100px;
   }
 }
 /*========= NEWここまで ===============*/
@@ -603,7 +621,7 @@ c-concept #concept {
 
 .c-concept__01 .img-change,
 .c-concept__02 .img-change {
-  max-width: 50%;
+  max-width: 40%;
   margin: 40px;
   flex-shrink: 0;
 }
@@ -634,7 +652,7 @@ c-concept #concept {
   height: 400px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .c-concept__01,
   .c-concept__02 {
     flex-direction: column;
@@ -642,8 +660,8 @@ c-concept #concept {
   }
   .c-concept__01 .img-change,
   .c-concept__02 .img-change {
-    max-width: 100%;
-    margin: 20px 0 20 0;
+    max-width: 85%;
+    margin: 40 0 0 0px;
     flex-shrink: 0;
   }
   .c-concept__01 .c-concept__text,
@@ -875,8 +893,9 @@ img-change {
 }
 
 .c-access__map img {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 90%;
+  margin-left: 60px;
 }
 
 .c-access__map1 img {
@@ -1073,7 +1092,8 @@ img-change {
 .txt2 {
   line-height: 2;
   text-align: left;
-  margin-left: 500px;
+  margin-left: 430px;
+  margin-right: 80px;
 }
 
 .color-red {
@@ -1197,7 +1217,7 @@ footer {
   margin-left: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer__content {
     flex-direction: column;
     text-align: center;
@@ -1208,5 +1228,20 @@ footer {
   }
   .footer__sns {
     margin-top: 10px;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.min.css.map */
