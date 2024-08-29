@@ -143,11 +143,11 @@ img {
     flex-direction: column;
   }
   .c-nav__menu li a {
-    font-size: 30px;
+    font-size: 26px;
   }
   .c-header .c-nav__menu a {
-    font-size: 1.8rem;
-    padding: 20px 0;
+    font-size: 1.6rem;
+    padding: 15px 0;
     display: block;
     text-decoration: none;
   }
@@ -158,8 +158,8 @@ img {
 }
 /* 基本のSNSアイコンサイズ */
 .c-sns li a img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 /* スマホサイズ向けのスタイル */
@@ -250,7 +250,11 @@ img {
 }
 
 .c-nav li {
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+.c-nav__menu {
+  margin-right: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -298,6 +302,7 @@ img {
     font-weight: bold;
   }
 }
+/*=========予約ボタンここまで ===============*/
 .image-wrapper {
   position: relative;
   width: 100%;
@@ -317,7 +322,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 45%;
+  max-width: 35%;
   height: auto;
   z-index: 1;
 }
@@ -331,16 +336,52 @@ img {
   background-color: rgba(129, 121, 96, 0.38);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .logo-image {
     max-width: 60%;
   }
 }
 /*========= メイン写真ここまで ===============*/
-.news__heading {
+.news__header {
   text-align: center;
-  font-size: 48px;
-  margin-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* アイコンとテキストを中央揃え */
+}
+
+.news__icon {
+  margin: 0 10px;
+  /* アイコンとテキストの間にスペース */
+  height: 40px;
+  /* アイコンの高さを調整 */
+  width: auto;
+  /* アスペクト比を保持 */
+}
+
+.news__header {
+  display: flex;
+  align-items: center;
+  /* アイコンとテキストを中央揃え */
+  padding-top: 80px;
+}
+
+.news__icon {
+  height: 40px;
+  /* アイコンの高さを調整 */
+  width: auto;
+  /* アスペクト比を保持 */
+  margin: 0 10px;
+  /* アイコンとテキストの間にスペース */
+}
+
+.news__heading {
+  font-size: 40px;
+  /* テキストサイズを調整 */
+  line-height: 40px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
 }
 
 .c-news {
@@ -353,6 +394,7 @@ img {
 }
 
 .news__list {
+  margin-top: 80px;
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -361,6 +403,7 @@ img {
 }
 
 .news__item {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -550,19 +593,21 @@ img {
 }
 @media (max-width: 768px) {
   .news__content3 {
-    margin-left: 80px;
+    margin-left: -80px;
   }
   .news__date3 {
     padding-left: 100px;
+    font-size: 1rem;
   }
   .news__topic3 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 100px;
     display: inline;
   }
   .news__title3 {
     padding-left: 100px;
+    font-size: 1rem;
   }
 }
 /*========= NEWここまで ===============*/
@@ -571,7 +616,24 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 80px;
+  padding-top: 100px;
+}
+
+.concept__header {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.concept__heading {
+  font-size: 40px;
+  /* テキストサイズを調整 */
+  line-height: 40px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
 }
 
 .c-concept__box {
@@ -586,18 +648,11 @@ c-concept #concept {
   top: 25px;
 }
 
-.concept-title {
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 60px;
-  padding-top: 50px;
-}
-
 .c-concept__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 60px;
   margin-bottom: -40px;
   line-height: 50px;
@@ -605,12 +660,29 @@ c-concept #concept {
   font-weight: bold;
 }
 
+.js-fade1 {
+  font-weight: normal;
+  line-height: 50px;
+  padding-left: 180px;
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+.js-fade2 {
+  font-weight: normal;
+  line-height: 50px;
+  padding-left: 60px;
+  margin-right: 35px;
+  font-size: 1.2rem;
+}
+
 .c-concept__01,
 .c-concept__02 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
+  width: 90%;
 }
 
 .c-concept__01 .c-concept__text {
@@ -633,13 +705,14 @@ c-concept #concept {
 .c-concept p {
   line-height: 50px;
   margin: 40px;
+  margin-bottom: 0;
   align-self: start;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .c-concept__img img {
-  width: 100%;
+  width: 80%;
 }
 
 .c-concept__02 {
@@ -647,21 +720,52 @@ c-concept #concept {
 }
 
 .c-concept__02 .img-change {
-  max-width: 50%;
+  max-width: 55%;
   margin-right: 30px;
-  height: 400px;
+  height: 350px;
+  padding-left: 140px;
 }
 
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+
+.eachTextAnime.appeartext {
+  font-size: 1.6rem;
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 768px) {
-  .c-concept__01,
+  .c-concept__01 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
   .c-concept__02 {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 120%;
+    margin-top: 0px;
   }
-  .c-concept__01 .img-change,
+  .c-concept__01 .img-change {
+    max-width: 90%;
+    padding-left: 80px;
+    flex-shrink: 0;
+  }
   .c-concept__02 .img-change {
-    max-width: 85%;
-    margin: 40 0 0 0px;
+    max-width: 80%;
+    margin-right: 300px;
     flex-shrink: 0;
   }
   .c-concept__01 .c-concept__text,
@@ -670,8 +774,22 @@ c-concept #concept {
     flex: 1;
     font-size: clamp(0.75rem, 1.2vw, 0.875rem);
   }
+  .js-fade1 {
+    font-weight: normal;
+    line-height: 30px;
+    padding-left: 120px;
+    font-size: 1rem;
+  }
+  .js-fade2 {
+    width: 70%;
+    font-weight: normal;
+    line-height: 30px;
+    padding-right: 100px;
+    font-size: 1rem;
+    padding-left: 0;
+  }
   .c-concept__text {
-    font-size: 150%;
+    font-size: 1.2rem;
     line-height: 40px;
     font-weight: bold;
     padding-bottom: 0;
@@ -679,11 +797,10 @@ c-concept #concept {
   }
   .c-concept p {
     line-height: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     font-size: 18px;
     font-weight: normal;
-    margin-bottom: 30px;
   }
 }
 /*========= conceptここまで ===============*/
@@ -1230,7 +1347,8 @@ footer {
     margin-top: 10px;
   }
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: auto;
@@ -1238,7 +1356,8 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  html, body {
+  html,
+  body {
     margin: 0;
     padding: 0;
     height: auto;
