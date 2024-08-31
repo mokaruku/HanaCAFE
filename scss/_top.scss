@@ -68,7 +68,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .c-header__logo {
@@ -100,7 +100,7 @@ img {
     align-items: center;
     height: 100%;
     width: 100%;
-    top: 21px;
+    top: 19px;
     left: 0;
     background-color: #ffffff;
     display: flex;
@@ -117,10 +117,10 @@ img {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .c-header__sp {
-    opacity: 1;
-    pointer-events: all;
+// @media only screen and (max-width: 768px) {
+//   .c-header__sp {
+//     opacity: 1;
+//     pointer-events: all;
 
     @media only screen and (max-width: 768px) {
       .pc-only {
@@ -130,9 +130,7 @@ img {
       .sp-only {
         display: block;
       }
-    }
-  }
-
+    
   .c-nav {
     font-family: var(--font-base);
     font-style: normal;
@@ -150,6 +148,8 @@ img {
     display: block;
     width: 100%;
     flex-direction: column;
+    margin-bottom:-250px;
+    height: 100vh;//navの高さを画面全体にする
   }
 
   .c-nav__menu li a {
@@ -157,16 +157,16 @@ img {
   }
 
   .c-header .c-nav__menu a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 15px 0;
     display: block;
     text-decoration: none;
   }
 
   //モバイル版の見え方
-  .c-header .c-nav .c-sns {
+  .c-sns {
     margin-left: 0;
-    margin: 30px;
+    
   }
 }
 
@@ -378,7 +378,6 @@ img {
 
 /*========= メイン写真ここまで ===============*/
 //------news--------
-
 .news__header {
   text-align: center;
   justify-content: center;
@@ -467,6 +466,15 @@ img {
   height: 300px;
 }
 
+.news__link{
+  pointer-events: none; /* すべての段落のクリックを無効にする */
+  cursor: default; /* カーソルを通常の状態にする */
+}
+
+.news__topic {
+  pointer-events: auto; /* 指定したトピックはクリック可能にする */
+}
+
 .news__content {
   flex-grow: 1;
 }
@@ -524,12 +532,6 @@ img {
   font-weight: bold;
 }
 
-.news__topic3 {
-  font-weight: bold;
-  font-size: 22px;
-  padding-left: 20px;
-  display: inline;
-}
 
 .news__title {
   font-family: var(--font-base);
@@ -607,8 +609,8 @@ img {
     color: inherit;
   }
 
-  .news__content {
-    padding: 0;
+  .news__content3 {
+   padding-left:140px;
   }
 
   .news__date,
@@ -639,31 +641,29 @@ img {
   .news__content3 {
     text-align: left;
   }
+
+  .news__content3 {
+   padding-left: 130px;
+  }
 }
 
 @media (max-width: 768px) {
-  .news__content3 {
-    margin-left: -80px;
-  }
-
-  .news__date3 {
-    padding-left: 100px;
+ .news__date3 {
+    padding-left: 35px;
     font-size: 1rem;
   }
 
-  .news__topic3 {
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 100px;
-    display: inline;
-  }
-
   .news__title3 {
-    padding-left: 100px;
+   
     font-size: 1rem;
   }
 }
 
+@media (max-width: 650px) {
+  .news__content3 {
+padding-left: 0;
+}
+}
 /*========= NEWここまで ===============*/
 //-------concept-------
 .c-concept {
@@ -722,6 +722,7 @@ c-concept #concept {
 .js-fade1 {
   font-weight: normal;
   line-height: 50px;
+  font-family: var(--font-base);
   padding-left: 180px;
   margin-right: 50px;
   font-size: 1.2rem;
@@ -730,6 +731,7 @@ c-concept #concept {
 .js-fade2 {
   font-weight: normal;
   line-height: 50px;
+  font-family: var(--font-base);
   padding-left: 60px;
   margin-right: 35px;
   font-size: 1.2rem;
@@ -752,7 +754,7 @@ c-concept #concept {
 
 .c-concept__01 .img-change,
 .c-concept__02 .img-change {
-  max-width: 40%;
+  max-width: 50%;
   margin: 40px;
   flex-shrink: 0;
 }
@@ -891,11 +893,22 @@ c-concept #concept {
   padding: 0 20px;
 }
 
-.menu-title {
-  font-size: 36px;
-  font-weight: bold;
+.menu__header {
   text-align: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.menu__heading {
+  font-size: 40px;
+  /* テキストサイズを調整 */
+  line-height: 40px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+
 }
 
 .menus {
@@ -1032,10 +1045,29 @@ img-change {
   margin-bottom: 80px;
 }
 
+.stores__header {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.stores__heading {
+  font-size: 36px;
+  /* テキストサイズを調整 */
+  line-height: 40px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+
+}
+
+
 .ol-stores {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; 
 }
 
 .ol-store {
@@ -1049,13 +1081,21 @@ img-change {
 
 .ol-store-img img {
   max-width: 100%;
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
+  margin-left: 55px;
 }
 
 .store-text {
   text-align: start;
-  padding-top: 40px;
+  padding-top: 100px;
+}
+
+.store-text  {
+font-size: 1rem;
+width: 80%;
+margin-left: 50px;
+
 }
 
 /* レスポンシブ対応 */
@@ -1084,6 +1124,24 @@ img-change {
   align-items: center;
 }
 
+.access__header {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.access__heading {
+  font-size: 36px;
+  /* テキストサイズを調整 */
+  line-height: 36px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+
+}
+
 .c-access__map {
   flex-basis: 60%;
 }
@@ -1100,7 +1158,7 @@ img-change {
 
 .c-access__map1 img {
   margin-left: -500px;
-  margin-bottom: -370px;
+  margin-bottom: -150px;
 }
 
 .c-access__map2 img {
@@ -1155,14 +1213,12 @@ img-change {
   align-items: center;
   margin-bottom: 1rem;
   transform: rotate(45deg);
-
 }
 
 .c-access__map2 p {
   transform: rotate(-45deg);
   order: 1;
 }
-
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
@@ -1224,21 +1280,29 @@ img-change {
 .access-title {
   font-size: 48px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
+.c-access__list2 {
+padding: 40px;
+margin-right: -50px;
+}
 .c-title02 {
   font-size: 24px;
   font-weight: bold;
   padding: 50px;
+  margin-left: 50px;
 }
 
+.l-container2 {
+  padding-left: 100px;
+  margin-left: 100px;
+}
 .c-access__details {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   padding: 40px;
-  margin-left: 40;
+ 
 }
 
 .c-access__details--address {
@@ -1254,6 +1318,13 @@ img-change {
   margin-bottom: 10px;
   font-size: 20px;
 }
+
+.ttl {
+font-weight: bold;
+font-size: 20px;
+margin-left: 100px;
+}
+
 
 .c-access__details .txt {
   line-height: 2; //行間
@@ -1287,30 +1358,45 @@ img-change {
 
 /*========= Hana CAFE住所・営業時間ここまで ===============*/
 //-------reservation--------
-
-.c-rv_title01 {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 50px;
-  padding-top: 100px;
+.c-reservation {
+  margin-top: 100px;
 }
-
 .l-rv_container {
   margin-top: -60px;
-  margin-left: 180px;
+}
+
+.rv__header {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.rv__block {
+  margin: 80px;
+}
+
+.rv__heading {
+  font-size: 36px;
+  /* テキストサイズを調整 */
+  line-height: 36px;
+  /* アイコンの高さに合わせて行の高さを調整 */
+  margin: 0;
+  /* デフォルトのマージンをリセット */
 }
 
 .rvtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.rv_txt2 {
   font-size: 20px;
-}
 
-.txt2 {
-  line-height: 2;
-  text-align: left;
-  margin-left: 430px;
-  margin-right: 80px;
+  
 }
-
 .color-red {
   color: red;
   font-weight: bold;
@@ -1340,8 +1426,8 @@ img-change {
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 767px) {
-  .c-rv_title01 {
+@media (max-width: 768px) {
+  .rv__heading {
     font-size: 32px;
     margin-bottom: 30px;
     padding-top: 50px;
@@ -1411,10 +1497,18 @@ img-change {
 @media (max-width: 768px) {
   .form-img-area img {
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
+    position: absolute;
+    top: 0%;
+    left: 0%;
   }
-}
+  .form-img-area {
+    width: 100%;
+    height: 65vh;
+    
+  }
+  }
 
 /*=========フッター写真ここまで ===============*/
 // --------futter--------
@@ -1471,11 +1565,8 @@ body {
   overflow-x: hidden;
 }
 
-
-
 @media (max-width: 768px) {
-
-  html,
+html,
   body {
     margin: 0;
     padding: 0;
