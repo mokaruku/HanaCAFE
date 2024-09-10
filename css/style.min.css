@@ -153,7 +153,8 @@ img {
 }
 @media only screen and (max-width: 500px) {
   .c-header__logo {
-    font-size: 20px; /* 500px以下でのフォントサイズ */
+    font-size: 20px;
+    /* 500px以下でのフォントサイズ */
   }
 }
 .c-sns li a img {
@@ -161,10 +162,9 @@ img {
   height: 100%;
 }
 
+/*ボタン内側の基点となるためrelativeを指定。*/
 @media screen and (max-width: 768px) {
   .openbtn {
-    /*ボタン内側の基点となるためrelativeを指定。
-    追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
     position: relative;
     background: #000000;
     cursor: pointer;
@@ -178,7 +178,6 @@ img {
   .openbtn span {
     display: inline-block;
     transition: all 0.4s;
-    /*アニメーションの設定*/
     position: absolute;
     left: 14px;
     height: 2px;
@@ -195,9 +194,9 @@ img {
   .openbtn span:nth-of-type(3) {
     top: 25px;
   }
+  /*3つ目の要素のafterにMenu表示を指定*/
   .openbtn span:nth-of-type(3)::after {
     content: "Menu";
-    /*3つ目の要素のafterにMenu表示を指定*/
     position: absolute;
     top: 5px;
     left: -2px;
@@ -283,8 +282,10 @@ img {
 
 @media screen and (max-width: 500px) {
   .btn--fixed.ver2 {
-    font-size: 22px; /* 500px以下でのフォントサイズ */
-    padding: 8px 16px; /* パディングも調整 */
+    font-size: 22px;
+    /* 500px以下でのフォントサイズ */
+    padding: 8px 16px;
+    /* パディングも調整 */
     height: 200px;
     width: 50px;
   }
@@ -337,7 +338,7 @@ img {
 
 @media (max-width: 768px) {
   .image-wrapper {
-    margin-top: 80px;
+    margin-top: 70px;
     width: 100%;
     height: auto;
   }
@@ -354,26 +355,30 @@ img {
 }
 
 .news__icon {
-  margin: 0 10px; /* アイコンとテキストの間にスペース */
-  height: 40px; /* アイコンの高さを調整 */
-  width: auto; /* アスペクト比を保持 */
+  margin: 0 10px;
+  /* アイコンとテキストの間にスペース */
+  height: 40px;
+  /* アイコンの高さを調整 */
+  width: auto;
+  /* アスペクト比を保持 */
 }
 
 .news__header {
   display: flex;
-  align-items: center; /* アイコンとテキストを中央揃え */
+  align-items: center;
+  /* アイコンとテキストを中央揃え */
   padding-top: 80px;
 }
 
 .news__icon {
-  height: 40px; /* アイコンの高さを調整 */
+  height: 40px;
   width: auto;
   margin: 0 10px;
 }
 
 .news__heading {
   font-size: 40px;
-  line-height: 40px; /* アイコンの高さに合わせて行の高さを調整 */
+  line-height: 40px;
   margin: 0;
 }
 
@@ -411,8 +416,10 @@ img {
   text-decoration: none;
   color: inherit;
   margin-bottom: 40px;
-  pointer-events: none; /* すべての段落のクリックを無効にする */
-  cursor: default; /* カーソルを通常の状態にする */
+  pointer-events: none;
+  /* すべての段落のクリックを無効にする */
+  cursor: default;
+  /* カーソルを通常の状態にする */
 }
 
 .news__cover-wrapper {
@@ -426,7 +433,8 @@ img {
 }
 
 .news__topic {
-  pointer-events: auto; /* 指定したトピックはクリック可能にする */
+  pointer-events: auto;
+  /* 指定したトピックはクリック可能にする */
 }
 
 .news__content1 {
@@ -579,6 +587,10 @@ img {
   }
   .news__title3 {
     font-size: 1rem;
+    margin: 0 20px;
+  }
+  .news__date3 {
+    padding-right: 300px;
   }
 }
 /*========= NEWここまで ===============*/
@@ -600,11 +612,8 @@ img {
 
 .concept__heading {
   font-size: 40px;
-  /* テキストサイズを調整 */
   line-height: 40px;
-  /* アイコンの高さに合わせて行の高さを調整 */
   margin: 0;
-  /* デフォルトのマージンをリセット */
 }
 
 .c-concept__box {
@@ -633,49 +642,34 @@ c-concept #concept {
 .c-concept__01,
 .c-concept__02 {
   display: flex;
-  /* フレックスボックスを適用 */
   align-items: center;
-  /* 縦の中央揃え */
   justify-content: space-between;
-  /* 要素間のスペースを均等に */
   margin-top: 100px;
-  /* 上部のマージン */
   width: 90%;
-  /* 幅を90%に設定 */
   padding-left: 80px;
-  /* 左右のパディングを増加 */
 }
 
 .c-concept__01 {
   flex-direction: row;
-  /* テキストが左、画像が右 */
 }
 
 .c-concept__02 {
   flex-direction: row;
-  /* 画像が左、テキストが右 */
   margin-left: 60px;
 }
 
 .js-fade1,
 .js-fade2 {
   flex: 1;
-  /* テキストを可変に設定 */
   max-width: 50%;
-  /* 最大幅を50%に設定 */
   margin: 0 40px;
-  /* テキストと画像の間にスペース */
   font-size: clamp(1rem, 1.8vw, 1.3rem);
-  /* フォントサイズをレスポンシブに */
   line-height: 2;
-  /* 行間を調整 */
 }
 
 .img-change {
   max-width: 50%;
-  /* 画像の最大幅を50%に設定 */
   height: auto;
-  /* 高さを自動調整 */
 }
 
 .c-concept p {
@@ -716,11 +710,8 @@ c-concept #concept {
   .c-concept__01,
   .c-concept__02 {
     flex-direction: column;
-    /* 縦並びに変更 */
     align-items: center;
-    /* 中央揃え */
     width: 100%;
-    /* 幅を100%に設定 */
     padding-left: 0;
   }
   .c-concept__02 {
@@ -728,16 +719,12 @@ c-concept #concept {
   }
   .img-change {
     max-width: 80%;
-    /* 最大幅を90%に設定 */
   }
   .js-fade1,
   .js-fade2 {
     max-width: 100%;
-    /* 幅を100%に設定 */
     margin: 60px;
-    /* マージンをリセット */
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-    /* モバイル用のフォントサイズを設定 */
   }
   .js-fade1 {
     margin-top: 0;
@@ -793,11 +780,8 @@ c-concept #concept {
 
 .menu__heading {
   font-size: 40px;
-  /* テキストサイズを調整 */
   line-height: 40px;
-  /* アイコンの高さに合わせて行の高さを調整 */
   margin: 0;
-  /* デフォルトのマージンをリセット */
 }
 
 .menus {
@@ -857,14 +841,11 @@ c-concept #concept {
 ===================================*/
 .slider img {
   width: 100%;
-  /*スライダー内の画像を横幅100%に*/
   height: 300px;
 }
 
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
 .slider .slick-slide {
   margin: 0 10px;
-  /*スライド左右の余白調整*/
 }
 
 /*=========MENUここまで ===============*/
@@ -881,7 +862,6 @@ c-concept #concept {
   text-decoration: none;
   color: inherit;
   position: relative;
-  /* 下線のためにposition: relativeを設定 */
 }
 
 .menu__arrow a:after {
@@ -891,9 +871,7 @@ c-concept #concept {
   left: 0;
   width: 100%;
   height: 2px;
-  /* 下線の高さ */
   background-color: #000;
-  /* 下線の色 */
 }
 
 .menu__arrow .f {
@@ -946,7 +924,6 @@ c-concept #concept {
 
 .ol-store {
   flex: 1 1 30%;
-  /* フレックスボックスの設定 */
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -957,16 +934,11 @@ c-concept #concept {
 
 .ol-store-img img {
   width: 350px;
-  /* 幅を固定 */
   height: 350px;
-  /* 高さを固定 */
   -o-object-fit: cover;
      object-fit: cover;
-  /* アスペクト比を保持しつつ、指定サイズに収める */
   display: block;
-  /* 中央揃え */
   margin: 0 auto;
-  /* 中央揃え */
 }
 
 /* 特定の画像が小さくならないように調整 */
@@ -974,7 +946,6 @@ c-concept #concept {
   display: block;
   /* 画像をブロック要素にして中央揃え */
   margin: 0 auto;
-  /* 中央に揃える */
 }
 
 .store-text {
@@ -996,7 +967,6 @@ c-concept #concept {
   }
   .ol-store {
     width: 80%;
-    /* 幅を80%に設定 */
   }
   .stores__heading {
     font-size: 24px;
@@ -1016,9 +986,7 @@ c-concept #concept {
   width: 80%;
   margin: 0 auto;
   transform: scale(0.8);
-  /* 全体を80%に縮小 */
   transform-origin: top;
-  /* 縮小の基準を上に設定 */
 }
 
 .access__header {
@@ -1031,33 +999,24 @@ c-concept #concept {
 
 .access__heading {
   font-size: 36px;
-  /* テキストサイズを調整 */
   line-height: 36px;
-  /* アイコンの高さに合わせて行の高さを調整 */
   margin: 0;
-  /* デフォルトのマージンをリセット */
 }
 
 .c-access__map img,
 .c-access__map1 img,
 .c-access__map2 img {
   width: 100%;
-  /* 幅を親要素に合わせる */
   height: auto;
-  /* 高さを自動調整 */
   max-width: none;
-  /* 最大幅を解除 */
 }
 
 .c-access__map1 img,
 .c-access__map2 img {
   border-radius: 50%;
-  /* 角を丸める */
   -o-object-fit: cover;
      object-fit: cover;
-  /* 念のため */
   margin: 0;
-  /* マージンをリセット */
 }
 
 .c-access__map {
@@ -1131,6 +1090,7 @@ c-concept #concept {
 
 .c-access__map2 {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1145,6 +1105,11 @@ c-concept #concept {
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
+  .c-access__map img {
+    width: 250px;
+    height: auto;
+    margin: 0;
+  }
   .c-access__map1 img,
   .c-access__map2 img {
     width: auto;
@@ -1172,6 +1137,7 @@ c-concept #concept {
   .c-access__map1 img,
   .c-access__map2 img {
     max-width: 100px;
+    height: 100px;
     margin: 0 auto;
   }
 }
@@ -1183,6 +1149,8 @@ c-concept #concept {
   }
   .c-access__map2 p {
     font-size: 10px;
+    padding-right: 0px;
+    margin-left: 50px;
   }
   .access__heading {
     font-size: 24px;
@@ -1283,29 +1251,20 @@ c-concept #concept {
 
 .reservation__heading {
   font-size: 36px;
-  /* テキストサイズを調整 */
   line-height: 36px;
-  /* アイコンの高さに合わせて行の高さを調整 */
   margin: 0;
-  /* デフォルトのマージンをリセット */
 }
 
 .rv__block {
   margin: 80px auto;
-  /* 中央揃えのためにautoを使用 */
   width: 90%;
-  /* 幅を90%に設定 */
   max-width: 600px;
-  /* 最大幅を指定 */
   aspect-ratio: 16/9;
   /* 縦横比を16:9に設定 */
   padding: 20px;
-  /* パディングを追加 */
   display: flex;
   flex-direction: column;
-  /* 縦に並べる */
   justify-content: space-between;
-  /* 要素を均等に配置 */
 }
 
 .rvtitle {
@@ -1327,20 +1286,15 @@ c-concept #concept {
   color: red;
   font-weight: bold;
   margin-left: 35%;
-  /* 中央揃え */
   transform: translateX(-50%);
-  /* 左右中央揃え */
 }
 
 .form-submit {
   flex-basis: 30%;
   text-align: right;
   margin-top: auto;
-  /* ボタンを下部に配置 */
   margin-right: 0;
-  /* 右のマージンをリセット */
   padding-right: 20px;
-  /* 右のパディングを追加 */
 }
 
 .btn-rectangle {
@@ -1350,6 +1304,7 @@ c-concept #concept {
   background-color: #D9D9D9;
   color: #fff;
   border-radius: 4px;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
